@@ -16,7 +16,7 @@ namespace ADOdotNetConecterArchitecture
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DisconnectedForm1());
+            Application.Run(new HomeworkADONet.StudentForm());
         }
     }
 }
