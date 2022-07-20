@@ -5,7 +5,7 @@ using System.Data;
 
 using System.Windows.Forms;
 
-namespace ADOdotNetConecterArchitecture
+namespace ADOdotNetConecterArchitecture.HomeworkADONet
 {
     public partial class ProductForm : Form
     {

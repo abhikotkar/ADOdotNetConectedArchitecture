@@ -41,12 +41,17 @@ namespace ADOdotNetConecterArchitecture
             this.lblsal = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.lblid = new System.Windows.Forms.Label();
+            this.saveusingsp = new System.Windows.Forms.Button();
+            this.deleteusingsp = new System.Windows.Forms.Button();
+            this.updateusingsp = new System.Windows.Forms.Button();
+            this.searchbyidusingsp = new System.Windows.Forms.Button();
+            this.showallusingsp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.empgrid)).BeginInit();
             this.SuspendLayout();
             // 
             // btnshow
             // 
-            this.btnshow.Location = new System.Drawing.Point(426, 243);
+            this.btnshow.Location = new System.Drawing.Point(593, 243);
             this.btnshow.Name = "btnshow";
             this.btnshow.Size = new System.Drawing.Size(172, 23);
             this.btnshow.TabIndex = 23;
@@ -57,9 +62,9 @@ namespace ADOdotNetConecterArchitecture
             // empgrid
             // 
             this.empgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.empgrid.Location = new System.Drawing.Point(343, 33);
+            this.empgrid.Location = new System.Drawing.Point(418, 33);
             this.empgrid.Name = "empgrid";
-            this.empgrid.Size = new System.Drawing.Size(341, 189);
+            this.empgrid.Size = new System.Drawing.Size(333, 189);
             this.empgrid.TabIndex = 22;
             // 
             // btndelete
@@ -150,11 +155,66 @@ namespace ADOdotNetConecterArchitecture
             this.lblid.TabIndex = 12;
             this.lblid.Text = "Emp ID";
             // 
+            // saveusingsp
+            // 
+            this.saveusingsp.Location = new System.Drawing.Point(286, 30);
+            this.saveusingsp.Name = "saveusingsp";
+            this.saveusingsp.Size = new System.Drawing.Size(126, 23);
+            this.saveusingsp.TabIndex = 24;
+            this.saveusingsp.Text = "Save using SP";
+            this.saveusingsp.UseVisualStyleBackColor = true;
+            this.saveusingsp.Click += new System.EventHandler(this.saveusingsp_Click);
+            // 
+            // deleteusingsp
+            // 
+            this.deleteusingsp.Location = new System.Drawing.Point(286, 152);
+            this.deleteusingsp.Name = "deleteusingsp";
+            this.deleteusingsp.Size = new System.Drawing.Size(126, 23);
+            this.deleteusingsp.TabIndex = 26;
+            this.deleteusingsp.Text = "Delete using SP";
+            this.deleteusingsp.UseVisualStyleBackColor = true;
+            this.deleteusingsp.Click += new System.EventHandler(this.deleteusingsp_Click);
+            // 
+            // updateusingsp
+            // 
+            this.updateusingsp.Location = new System.Drawing.Point(286, 86);
+            this.updateusingsp.Name = "updateusingsp";
+            this.updateusingsp.Size = new System.Drawing.Size(126, 23);
+            this.updateusingsp.TabIndex = 25;
+            this.updateusingsp.Text = "Update using SP";
+            this.updateusingsp.UseVisualStyleBackColor = true;
+            this.updateusingsp.Click += new System.EventHandler(this.updateusingsp_Click);
+            // 
+            // searchbyidusingsp
+            // 
+            this.searchbyidusingsp.Location = new System.Drawing.Point(286, 199);
+            this.searchbyidusingsp.Name = "searchbyidusingsp";
+            this.searchbyidusingsp.Size = new System.Drawing.Size(126, 23);
+            this.searchbyidusingsp.TabIndex = 27;
+            this.searchbyidusingsp.Text = "Search By ID using SP";
+            this.searchbyidusingsp.UseVisualStyleBackColor = true;
+            this.searchbyidusingsp.Click += new System.EventHandler(this.searchbyidusingsp_Click);
+            // 
+            // showallusingsp
+            // 
+            this.showallusingsp.Location = new System.Drawing.Point(415, 243);
+            this.showallusingsp.Name = "showallusingsp";
+            this.showallusingsp.Size = new System.Drawing.Size(172, 23);
+            this.showallusingsp.TabIndex = 28;
+            this.showallusingsp.Text = "Show All Emps using SP";
+            this.showallusingsp.UseVisualStyleBackColor = true;
+            this.showallusingsp.Click += new System.EventHandler(this.showallusingsp_Click);
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.showallusingsp);
+            this.Controls.Add(this.searchbyidusingsp);
+            this.Controls.Add(this.deleteusingsp);
+            this.Controls.Add(this.updateusingsp);
+            this.Controls.Add(this.saveusingsp);
             this.Controls.Add(this.btnshow);
             this.Controls.Add(this.empgrid);
             this.Controls.Add(this.btndelete);
@@ -190,5 +250,10 @@ namespace ADOdotNetConecterArchitecture
         private System.Windows.Forms.Label lblsal;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.Button saveusingsp;
+        private System.Windows.Forms.Button deleteusingsp;
+        private System.Windows.Forms.Button updateusingsp;
+        private System.Windows.Forms.Button searchbyidusingsp;
+        private System.Windows.Forms.Button showallusingsp;
     }
 }

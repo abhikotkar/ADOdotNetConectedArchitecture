@@ -1,5 +1,5 @@
 ﻿
-namespace ADOdotNetConecterArchitecture
+namespace ADOdotNetConecterArchitecture.HomeworkADONet
 {
     partial class ProductForm
     {
